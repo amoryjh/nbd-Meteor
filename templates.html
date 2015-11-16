@@ -1,0 +1,31 @@
+<template name="nav">
+  <nav>
+  <h1 class="col-xs-2">NBD</h1>
+  <ul class="col-xs-10">
+    <li><a href="/">Home</a></li>
+    <li><a href="/projects/">Project</a></li>
+    <li><a href="">People</a></li>
+    <li><a href="">Admin</a></li>
+  </ul>
+  </nav>
+</template>
+
+<template name="projInstance">
+  <div class="proj">
+  <h1>{{projName}}</h1>
+  <ul>
+    <li>{{details.createdOn}}</li>
+    <li>{{details.createdBY}}</li>
+    {{#each modules}}
+      <li>{{this.moduleName}}</li>
+      <li>{{this.numberEmp}}</li>
+    {{/each}}
+    <li>{{category}}</li>
+  </ul>
+  </div>
+</template>
+
+
+<template name="footer">
+  <p>This is the footer</p>
+</template>
